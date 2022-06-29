@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(2, 2, 2, 0.866);
+    color: white;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px black;
+}
+
+
+
+.instructions {
+    text-align: center;
+    height: 100px;
+    letter-spacing: 3px;
+}
+
+.instructions h2 {
+    font-size: 2rem;
+    margin: 10px;
+    text-shadow: 2px 2px black;
+}
+
+
+#readyButton {
+    background-color: #13aa52;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px
+    
+}
+
+#readyButton:hover {
+    background-color: #008b3a;
+}
+
+.images {
+    height: 200px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 20px;  
+}
+
+#userPick .images:hover {
+    filter: saturate(0%);
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.player-side {
+    width: 40%;
+    text-align: right;
+}
+
+.vs {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+}
+
+.computer-side {
+    width: 40%;
+    
+}
+
+.computer-container {
+    
+    margin-left: 100px;
+}
+
+.player-message {
+    height: 50px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tryAgain {
+    height: 50px;
+}
+
+#try {
+    display: none;
+    margin: auto;
+    background-color: #2785F6;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+#try:hover {
+    background-color: #0a55b0;
+}
+
+
+.score-container {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 25%;
+    margin: auto;
+    height: 250px;  
+}
+
+.score-container h1 {
+    margin: 12px;
+    
+}
+
+.score {
+    text-align: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.player-score {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 10px solid black;
+}
+.player-score h2 {
+    color: rgb(74, 74, 255);
+    margin-top: 10px;
+}
+.player-score h1 {
+    color: black;
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.computer-score {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 10px solid black;
+}
+
+.computer-score h1 {
+    color: black;
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.computer-score h2 {
+    color: rgb(74, 74, 255);
+    margin-top: 10px;
+}
+
+.scroll {
+    position: absolute;
+    display: none;
+    margin-top: -25px;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .title h1 {
+        font-size: 3rem;
+    }
+    .score-container {
+        width: 50% !important;
+    }
+
+} 
+
+
+@media only screen and (max-width: 1850px) {
+    .images {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .score-container {
+        width: 40%;
+    }
+    .images {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .score-container {
+        width: 75% !important;
+    }
+    
+    .images {
+        height: 100px;
+    }
+
+    .computer-container {
+        margin: auto;
+        margin-top: 150px;
+    }
+    .vs {
+        font-size: 2rem;
+    }
+
+    .instructions h2 {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    }
+
+    .player-score {
+        width: 100px;
+        height: 100px;
+    }
+    .player-score h1 {
+        font-size: 2rem;
+    }
+
+    .computer-score {
+        width: 100px;
+        height: 100px;
+    }
+
+    .computer-score h1 {
+        font-size: 2rem;
+    }
+
+    .score-container {
+        height: 200px;
+    }
+    .player-message {
+        font-size: 1.5rem;
+        margin-top: -15px;
+    }
+
+    #readyButton {
+        margin-top: -5px;
+        border: none;
+    }
+    .main {
+        margin-top: -25px;
+    }
+
+    .tryAgain {
+        margin-top: -25x; 
+    }
+
+    #try {
+        border: none;
+    }
+}

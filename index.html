@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="instructions">
+        <h2>FIRST TO 5 WINS!</h2>
+        <button id="readyButton">Ready?</button>
+    </div>
+    <div class="main">
+        <div class="player-side">
+            <div class="image-button" id="userPick">
+                <input type="image" id="rock" class="images" value="rock" src="./images/rock.png">
+                <input type="image" id="paper" class="images" value="paper" src="./images/paper.png">
+                <input type="image" id="scissors" class="images" value="scissors" src="./images/scissors.png">
+            </div>
+        </div>
+        <div class="vs">
+            <h2>VS</h2>
+        </div>
+        <div class="computer-side" id="computerSide">
+            <div class="computer-container">
+                <img class="images" id="compImage" src="./images/RPS.png">
+                <div id="imgScroll">
+                    <img class="images scroll" src="./images/rock.png">
+                    <img class="images scroll" src="./images/paper.png">
+                    <img class="images scroll" src="./images/scissors.png">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <div class="score">
+        <div class="player-message" id="player-message">
+        </div>
+        <div class="tryAgain">
+            <button id="try">Play Again?</button>
+        </div>
+
+        <div class="score-container">
+            <h1>SCORE</h1>
+            <div class="scores">
+
+                <div class="player-score">
+                    <h2>You</h2>
+                    <h1 id="player-score">0</h1>
+                </div>
+                <div class="computer-score">
+                    <h2>Computer</h2>
+                    <h1 id="computer-score">0</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
